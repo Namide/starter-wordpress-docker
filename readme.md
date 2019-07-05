@@ -1,11 +1,14 @@
 # Docker with Wordpress
 
+> Serve a Wordpress website with Docker
+
+
+## Install
+
 Install [Docker](https://docs.docker.com/install/) and run it.
 
 
-## Run Wordpress
-
-Run the command
+**Run the command**
 
 ```bash
 docker-compose up
@@ -16,7 +19,8 @@ Open the links:
 - [phpMyAdmin](http://localhost:8081/)
 
 
-## Directories
+## Directories & files
 
-- `/www` All the Wordpress files
-- `/mysql-cache` All the database content
+- `/docker-compose.yml` Docker config
+- `/www` All the Wordpress files (generated)
+- `/mysql-cache` Database persistent data (generated)
