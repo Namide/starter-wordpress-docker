@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+    wordpress:
+        image: wordpress
+        restart: always
+        ports:
+            - "8080:80"
+        volumes:
+            - ./www:/var/www/html
+        environment:
+            WORDPRESS_DB_HOST: mysql
+            WORDPRESS_DB_USER: Motoko
+            WORDPRESS_DB_PASSWORD: passw0rd*
+            WORDPRESS_DB_NAME: wordpress
+
+    mysql:
+        image: mysql:5.7
+        restart: always
+        volumes:
+            - ./mysql-cache:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: Motoko
+            MYSQL_PASSWORD: passw0rd*
+            MYSQL_RANDOM_ROOT_PASSWORD: "1"
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        restart: always
+        ports:
+            - "8081:80"
+        environment:
+            PMA_HOST: mysql
+            PMA_USER: Motoko
+            PMA_PASSWORD: passw0rd*
