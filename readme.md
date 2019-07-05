@@ -8,13 +8,13 @@
 Install [Docker](https://docs.docker.com/install/) and run it.
 
 
-**Run the command**
+**1. Run the command**
 
 ```bash
 docker-compose up
 ```
 
-Open the links:
+**2. Open the links**
 - [Wordpress](http://localhost:8080/)
 - [phpMyAdmin](http://localhost:8081/)
 
