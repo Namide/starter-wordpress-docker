@@ -15,15 +15,15 @@ docker-compose up
 ```
 
 **2. Open the links**
-- [Wordpress](http://localhost:8080/)
-- [phpMyAdmin](http://localhost:8081/)
+- [website](http://localhost:8080/) (Wordpress)
+- [phpMyAdmin](http://localhost:8081/) (data base)
 
 
 **3. Stop the server manually**
 
-_The process will be stopped when the terminal will closed. But if you need to stop the server manually:_
+> The process will be stopped when the terminal will closed. But if you need to stop the server manually, follow this instructions.
 
-Go il the project directory (beside docker-compose.yml) and run the command:
+_From the project directory (beside docker-compose.yml)_, run the command:
 ```bash
 docker-compose down
 ```
