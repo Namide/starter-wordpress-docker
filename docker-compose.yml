@@ -35,3 +35,4 @@ services:
             PMA_HOST: mysql
             PMA_USER: Motoko
             PMA_PASSWORD: passw0rd*
+            UPLOAD_LIMIT: 1G # authorize upload <1Go files
